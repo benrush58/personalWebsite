@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page {% endblock %}
+{% block content %}
+<form action="#" method="POST">
+    <p>Username:</p>
+    <p><input type='text' name='nm'/></p>
+    <!--<p>Password:</p>
+    <p><input type='password' name='password'/></p> -->
+    <button type="submit">Login</button>
+</form>
+<body>
+    <a href="{{url_for('register')}}">Register</a>
+</body>
+
+{% endblock %}
